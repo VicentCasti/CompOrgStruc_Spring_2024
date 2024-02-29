@@ -19,6 +19,8 @@ asm_main:
         push dword 3
         push dword 4
 
+        dump_stack 1, 12, -8
+
         mov eax, [esp]
         call print_int
         call print_nl

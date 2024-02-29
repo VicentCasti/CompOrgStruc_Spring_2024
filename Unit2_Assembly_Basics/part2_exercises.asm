@@ -24,7 +24,11 @@ hw db "Hello World", 0 ; string
 char_prompt db "Enter a character: ", 0
 number_prompt db "Enter a number: ", 0
 
+<<<<<<< HEAD
 many_numbres times 5 dd 12
+=======
+many_numbers times 5 dd 12
+>>>>>>> 00b72cc (finally!)
 
 many_chars times 5 db "Z"
 
@@ -99,6 +103,10 @@ asm_main:
         dump_mem 1, many_chars, 0
         call print_nl
         dump_mem 2, many_chars + 3, 0
+<<<<<<< HEAD
+=======
+        dump_mem 3, many_numbers, 0
+>>>>>>> 00b72cc (finally!)
 
         popa
         mov     eax, 0            ; return back to C
